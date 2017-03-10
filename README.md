@@ -1,2 +1,3 @@
 # Driving-History
-Application used to track driving history
+This application uses a text file to generate a report of user driving history. The application starts by reading the file contents into two arrays based on Driver name and Trip data. The two arrays are passed as arguments to a method named build_output_array. This method is responsible for parsing the Trip data array to gather the trip start timne, end time and distance traveled. The time intervals are extracted from the trip data and passed to a method named get_elapsed_time. The get_elapsed_time method will return the elapsed time in hours back to the caller. The driver name, total distance traveled and average speed in mph are passed to a final method named print_data. The print_data method rounds the distance and mph to the nearest integer and formats the report. 
+      
