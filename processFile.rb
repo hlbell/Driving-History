@@ -4,7 +4,7 @@ module FileProcessor
             x=0
             sorted=output.sort_by{|x| x[1] }.reverse
             while x < sorted.length
-               if sorted[x][2] > 5 && sorted[x][2] < 100 
+               if (sorted[x][2] > 5 && sorted[x][2] <= 100) 
                    puts "#{sorted[x][0]}: #{sorted[x][1].round} miles @ #{sorted[x][2].round} mph"    
                elsif sorted[x][2] == 0 
                    puts "#{sorted[x][0]}: 0 miles"
